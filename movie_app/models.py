@@ -45,6 +45,7 @@ class Movie(models.Model):
         for i in reviews:
             sum_ += i.stars
         return sum_ / count
+        # не смог сделать без цикла
 
 CHOICES = (
     (1, '1'),
